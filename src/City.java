@@ -3,7 +3,7 @@ public class City {
 
 	private String cityName;
 	private String country;
-	private int numberOfInhabitants;
+	public int numberOfInhabitants;
 	
 	/**
 	 * @param cityName

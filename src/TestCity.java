@@ -9,10 +9,12 @@ public class TestCity {
 		City bordeaux = new City("Bordeaux", COUNTRY, 275292);
 		City saintGeoursDeMaremnes = new City("Saint Geours de Maremnes", COUNTRY, 3317);
 		
-		System.out.println(toulouse);
-		System.out.println(bordeaux);
-		System.out.println(saintGeoursDeMaremnes);
+//		System.out.println(toulouse);
+//		System.out.println(bordeaux);
+//		System.out.println(saintGeoursDeMaremnes);
 		
+		toulouse.numberOfInhabitants = toulouse.numberOfInhabitants + 20000; // avec l'attribut numberOfInhabitants dans la classe City en public
+		System.out.println(toulouse);
 
 	}
 }
