@@ -17,5 +17,28 @@ public class City {
 		this.country = country;
 		this.numberOfInhabitants = numberOfInhabitants;
 	}
+	public String getCityName() {
+		return cityName;
+	}
+
+	public void setCityName(String cityName) {
+		this.cityName = cityName;
+	}
+
+	public String getCountry() {
+		return country;
+	}
+
+	public void setCountry(String country) {
+		this.country = country;
+	}
+
+	public int getNumberOfInhabitants() {
+		return numberOfInhabitants;
+	}
+
+	public void setNumberOfInhabitants(int numberOfInhabitants) {
+			this.numberOfInhabitants = numberOfInhabitants;
+	}
 
 }
