@@ -41,8 +41,18 @@ public class City {
 		this.country = "unknown";
 		this.numberOfInhabitants = numberOfInhabitants;
 	}
-
 	
+	/**
+	 * @param cityName
+	 * @param country
+	 */
+	public City(String cityName, String country) {
+		super();
+		this.cityName = cityName;
+		this.country = country;
+		this.numberOfInhabitants = 0;
+	}
+
 	public String getCityName() {
 		return cityName;
 	}
@@ -81,18 +91,22 @@ public class City {
 		System.out.println("ville de " + cityName + " en " + country + " ayant " + numberOfInhabitants + " habitants.");
 	}
 
+	@Override
+	public String toString() {
+		return "BornCity [name=" + cityName + ", state=" + country + ", numberOfInhabitants=" + numberOfInhabitants + "]";
+	}
+
 //	@Override
 //	public String toString() {
 //		return  "[Ville : " + cityName + "] [ pays :"  + country + 
 //			"] [ nombre d'habitants : " + numberOfInhabitants + "]";
 //	}
 	
-	@Override
-	public String toString() {
-		return  "Ville de " + cityName + 
-				 " en " + country + 
-				 " ayant " + numberOfInhabitants +
-				 " habitants!";
-	}
-
+//	@Override
+//	public String toString() {
+//		return  "Ville de " + cityName + 
+//				 " en " + country + 
+//				 " ayant " + numberOfInhabitants +
+//				 " habitants!";
+//	}
 }

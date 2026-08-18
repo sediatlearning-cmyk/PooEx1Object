@@ -5,6 +5,7 @@ public class Person {
 	private String firstName;
 	private int age;
 	private String address;
+	private City hometown;
 	
 	/**
 	 * @param lastName
@@ -12,12 +13,13 @@ public class Person {
 	 * @param age
 	 * @param address
 	 */
-	public Person(String lastName, String firstName, int age, String address) {
+	public Person(String lastName, String firstName, int age, String address, City hometown) {
 		super();
 		this.lastName = lastName;
 		this.firstName = firstName;
 		this.age = age;
 		this.address = address;
+		this.hometown = hometown;
 	}
 	
 	/**
@@ -61,12 +63,14 @@ public class Person {
 	public String getAddress() {
 		return address;
 	}
+	
+	public City getHometown() {
+		return hometown;
+	}
 
 	@Override
 	public String toString() {
 		return "Person [lastName=" + lastName + ", firstName=" + firstName + ", age=" + age + ", address="
-				+ address + "]";
+				+ address +"] " + hometown;
 	}
-	
-
 }
