@@ -41,9 +41,12 @@ public class TestCity {
 //		rabat.setCountry("Maroc");
 //		System.out.println(rabat);
 		
-		toulouse.display();
-		bordeaux.display();
-		saintGeoursDeMaremnes.display();
+//		toulouse.display();
+//		bordeaux.display();
+//		saintGeoursDeMaremnes.display();
+		
+		System.out.println(toulouse);
+
 
 	}
 }

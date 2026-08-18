@@ -77,4 +77,12 @@ public class City {
 //			"] [ nombre d'habitants : " + numberOfInhabitants + "]";
 //	}
 	
+	@Override
+	public String toString() {
+		return  "Ville de " + cityName + 
+				 " en " + country + 
+				 " ayant " + numberOfInhabitants +
+				 " habitants!";
+	}
+
 }
