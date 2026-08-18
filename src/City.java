@@ -23,8 +23,20 @@ public class City {
 			this.numberOfInhabitants = MIN_INHABITANTS;
 			System.out.println("Le nombre d'habitants ne peut pas être inférieur à 1.");
 			}
-
 	}
+	
+	/**
+	 * @param cityName
+	 * @param numberOfInhabitants
+	 */
+	public City(String cityName, int numberOfInhabitants) {
+		super();
+		this.cityName = cityName;
+		this.country = "unknown";
+		this.numberOfInhabitants = numberOfInhabitants;
+	}
+
+	
 	public String getCityName() {
 		return cityName;
 	}
@@ -53,7 +65,10 @@ public class City {
 		else {
 			this.numberOfInhabitants = numberOfInhabitants;
 		}
-
 	}
-
+	@Override
+	public String toString() {
+		return  "[Ville : " + cityName + "] [ pays :"  + country + 
+			"] [ nombre d'habitants : " + numberOfInhabitants + "]";
+	}		
 }

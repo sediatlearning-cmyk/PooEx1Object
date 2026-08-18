@@ -31,10 +31,15 @@ public class TestCity {
 //		toulouse.setNumberOfInhabitants(-200);
 //		System.out.print(toulouse);
 		
-		City toulouse = new City("Toulouse", COUNTRY, 470000);
-		System.out.println(toulouse);
-		toulouse.setNumberOfInhabitants(370000);
-		System.out.println(toulouse);
+//		City toulouse = new City("Toulouse", COUNTRY, 470000);
+//		System.out.println(toulouse);
+//		toulouse.setNumberOfInhabitants(370000);
+//		System.out.println(toulouse);
+		
+		City rabat = new City("Rabat", 577000);
+		System.out.println(rabat);
+		rabat.setCountry("Maroc");
+		System.out.println(rabat);
 
 	}
 }
