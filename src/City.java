@@ -4,8 +4,14 @@ public class City {
 	private String cityName;
 	private String country;
 	public int numberOfInhabitants;
+	private static int instanceCount = 0;
+
 	
 	private static final int MIN_INHABITANTS = 1;
+
+	{
+		instanceCount++;
+	}
 
 	
 	/**
@@ -65,6 +71,10 @@ public class City {
 		else {
 			this.numberOfInhabitants = numberOfInhabitants;
 		}
+	}
+	
+	public static int getInstanceCount() {
+		return instanceCount;
 	}
 	
 	public void display() {

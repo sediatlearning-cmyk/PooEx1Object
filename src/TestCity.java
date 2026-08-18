@@ -6,8 +6,8 @@ public class TestCity {
 
 
 		City toulouse = new City("Toulouse", COUNTRY, 450000);
-//		City bordeaux = new City("Bordeaux", COUNTRY, 275292);
-//		City saintGeoursDeMaremnes = new City("Saint Geours de Maremnes", COUNTRY, 3317);
+		City bordeaux = new City("Bordeaux", COUNTRY, 275292);
+		City saintGeoursDeMaremnes = new City("Saint Geours de Maremnes", COUNTRY, 3317);
 		
 //		System.out.println(toulouse);
 //		System.out.println(bordeaux);
@@ -42,11 +42,11 @@ public class TestCity {
 //		System.out.println(rabat);
 		
 //		toulouse.display();
-//		bordeaux.display();
-//		saintGeoursDeMaremnes.display();
+		bordeaux.display();
+		saintGeoursDeMaremnes.display();
 		
 		System.out.println(toulouse);
-
+		System.out.println(City.getInstanceCount() + " instances sont créées."); 
 
 	}
 }
