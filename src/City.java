@@ -5,6 +5,9 @@ public class City {
 	private String country;
 	public int numberOfInhabitants;
 	
+	private static final int MIN_INHABITANTS = 1;
+
+	
 	/**
 	 * @param cityName
 	 * @param country
@@ -16,6 +19,11 @@ public class City {
 		this.cityName = cityName;
 		this.country = country;
 		this.numberOfInhabitants = numberOfInhabitants;
+		if(numberOfInhabitants < 1) {
+			this.numberOfInhabitants = MIN_INHABITANTS;
+			System.out.println("Le nombre d'habitants ne peut pas être inférieur à 1.");
+			}
+
 	}
 	public String getCityName() {
 		return cityName;
