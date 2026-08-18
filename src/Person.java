@@ -1,3 +1,4 @@
+import fr.fms.entities.City;
 
 public class Person {
 

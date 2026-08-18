@@ -1,3 +1,4 @@
+package fr.fms.entities;
 
 public class City {
 
@@ -91,13 +92,13 @@ public class City {
 		System.out.println("ville de " + cityName + " en " + country + " ayant " + numberOfInhabitants + " habitants.");
 	}
 
-	@Override
-	public String toString() {
-		if(this.getNumberOfInhabitants()>1 ) {
-			return cityName + ", " + country + ", population " + cityName + " " + numberOfInhabitants + " d'habitants";
-		}
-		return cityName + ", " + country;
-	}
+//	@Override
+//	public String toString() {
+//		if(this.getNumberOfInhabitants()>1 ) {
+//			return cityName + ", " + country + ", population " + cityName + " " + numberOfInhabitants + " d'habitants";
+//		}
+//		return cityName + ", " + country;
+//	}
 
 //	@Override
 //	public String toString() {
@@ -112,4 +113,9 @@ public class City {
 //				 " ayant " + numberOfInhabitants +
 //				 " habitants!";
 //	}
+	
+	@Override
+	public String toString() {
+		return cityName + ", " + country + ", " + numberOfInhabitants;
+	}
 }

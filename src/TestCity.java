@@ -1,3 +1,5 @@
+import fr.fms.entities.City;
+
 public class TestCity {
 
 			private static final String COUNTRY = "France";
