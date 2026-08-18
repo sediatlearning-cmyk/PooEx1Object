@@ -93,7 +93,10 @@ public class City {
 
 	@Override
 	public String toString() {
-		return "BornCity [name=" + cityName + ", state=" + country + ", numberOfInhabitants=" + numberOfInhabitants + "]";
+		if(this.getNumberOfInhabitants()>1 ) {
+			return cityName + ", " + country + ", population " + cityName + " " + numberOfInhabitants + " d'habitants";
+		}
+		return cityName + ", " + country;
 	}
 
 //	@Override

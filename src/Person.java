@@ -68,9 +68,15 @@ public class Person {
 		return hometown;
 	}
 
+//	@Override
+//	public String toString() {
+//		return "Person [lastName=" + lastName + ", firstName=" + firstName + ", age=" + age + ", address="
+//				+ address +"] " + hometown;
+//	}
+	
 	@Override
 	public String toString() {
-		return "Person [lastName=" + lastName + ", firstName=" + firstName + ", age=" + age + ", address="
-				+ address +"] " + hometown;
+		return  lastName + ", " + firstName + ", " + age + " ans, habitant " + address
+				+ ", Ville de naissance : " + hometown + "\n";
 	}
 }
