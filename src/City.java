@@ -38,7 +38,14 @@ public class City {
 	}
 
 	public void setNumberOfInhabitants(int numberOfInhabitants) {
+		if (numberOfInhabitants < 1) {
 			this.numberOfInhabitants = numberOfInhabitants;
+			throw new RuntimeException("Le nombre d'habitants ne peut être inférieur à 1.");	
+		}
+		else {
+			this.numberOfInhabitants = numberOfInhabitants;
+		}
+
 	}
 
 }

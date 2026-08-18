@@ -16,16 +16,19 @@ public class TestCity {
 //		toulouse.numberOfInhabitants = toulouse.numberOfInhabitants + 20000; // avec l'attribut numberOfInhabitants dans la classe City en public
 //		System.out.println(toulouse);
 
-		System.out.print(toulouse.getCityName());
-		System.out.print(", " +toulouse.getCountry());
-		System.out.println(", " +toulouse.getNumberOfInhabitants());
+//		System.out.print(toulouse.getCityName());
+//		System.out.print(", " +toulouse.getCountry());
+//		System.out.println(", " +toulouse.getNumberOfInhabitants());
+//		
+//		System.out.print(bordeaux.getCityName());
+//		System.out.print(", " +bordeaux.getCountry());
+//		System.out.println(", " +bordeaux.getNumberOfInhabitants());
+//		
+//		System.out.print(saintGeoursDeMaremnes.getCityName());
+//		System.out.print(", " +saintGeoursDeMaremnes.getCountry());
+//		System.out.println(", " +saintGeoursDeMaremnes.getNumberOfInhabitants());
 		
-		System.out.print(bordeaux.getCityName());
-		System.out.print(", " +bordeaux.getCountry());
-		System.out.println(", " +bordeaux.getNumberOfInhabitants());
-		
-		System.out.print(saintGeoursDeMaremnes.getCityName());
-		System.out.print(", " +saintGeoursDeMaremnes.getCountry());
-		System.out.println(", " +saintGeoursDeMaremnes.getNumberOfInhabitants());
+		toulouse.setNumberOfInhabitants(-200);
+		System.out.print(toulouse);
 	}
 }
