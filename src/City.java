@@ -66,9 +66,15 @@ public class City {
 			this.numberOfInhabitants = numberOfInhabitants;
 		}
 	}
-	@Override
-	public String toString() {
-		return  "[Ville : " + cityName + "] [ pays :"  + country + 
-			"] [ nombre d'habitants : " + numberOfInhabitants + "]";
-	}		
+	
+	public void display() {
+		System.out.println("ville de " + cityName + " en " + country + " ayant " + numberOfInhabitants + " habitants.");
+	}
+
+//	@Override
+//	public String toString() {
+//		return  "[Ville : " + cityName + "] [ pays :"  + country + 
+//			"] [ nombre d'habitants : " + numberOfInhabitants + "]";
+//	}
+	
 }

@@ -5,7 +5,7 @@ public class TestCity {
 	public static void main(String[] args) {
 
 
-//		City toulouse = new City("Toulouse", COUNTRY, 450000);
+		City toulouse = new City("Toulouse", COUNTRY, 450000);
 //		City bordeaux = new City("Bordeaux", COUNTRY, 275292);
 //		City saintGeoursDeMaremnes = new City("Saint Geours de Maremnes", COUNTRY, 3317);
 		
@@ -36,10 +36,14 @@ public class TestCity {
 //		toulouse.setNumberOfInhabitants(370000);
 //		System.out.println(toulouse);
 		
-		City rabat = new City("Rabat", 577000);
-		System.out.println(rabat);
-		rabat.setCountry("Maroc");
-		System.out.println(rabat);
+//		City rabat = new City("Rabat", 577000);
+//		System.out.println(rabat);
+//		rabat.setCountry("Maroc");
+//		System.out.println(rabat);
+		
+		toulouse.display();
+		bordeaux.display();
+		saintGeoursDeMaremnes.display();
 
 	}
 }
