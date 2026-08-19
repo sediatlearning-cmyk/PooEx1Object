@@ -1,3 +1,4 @@
+package fr.fms.entities;
 import fr.fms.entities.City;
 
 public class Person {
@@ -77,7 +78,7 @@ public class Person {
 	
 	@Override
 	public String toString() {
-		return  lastName + ", " + firstName + ", " + age + ", habitant " + address
+		return  lastName + ", " + firstName + ", " + age + " ans, habitant " + address
 				+ ", Ville de naissance : " + hometown + "\n";
 	}
 }
