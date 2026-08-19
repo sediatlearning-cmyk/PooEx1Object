@@ -3,6 +3,7 @@ import java.util.Iterator;
 import java.util.List;
 
 import fr.fms.entities.City;
+import fr.fms.entities.Person;
 
 public class TestPerson {
 
@@ -32,7 +33,5 @@ public class TestPerson {
 				System.out.println(person);
 			}
 		}
-		
 	}
-
 }

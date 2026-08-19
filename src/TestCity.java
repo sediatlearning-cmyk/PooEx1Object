@@ -49,6 +49,5 @@ public class TestCity {
 		
 		System.out.println(toulouse);
 		System.out.println(City.getInstanceCount() + " instances sont créées."); 
-
 	}
 }

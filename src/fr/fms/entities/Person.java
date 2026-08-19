@@ -1,6 +1,4 @@
 package fr.fms.entities;
-import fr.fms.entities.City;
-
 public class Person {
 
 	private String lastName;
@@ -69,6 +67,10 @@ public class Person {
 	public City getHometown() {
 		return hometown;
 	}
+	
+	public double getRemuneration(double CA) {
+		return 0;
+	}
 
 //	@Override
 //	public String toString() {
@@ -81,4 +83,5 @@ public class Person {
 		return  lastName + ", " + firstName + ", " + age + " ans, habitant " + address
 				+ ", Ville de naissance : " + hometown + "\n";
 	}
+	
 }

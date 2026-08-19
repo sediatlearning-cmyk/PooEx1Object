@@ -8,6 +8,5 @@ public class TestCapital {
 		
 		System.out.println(paris);
 		System.out.println(london);
-
 	}
 }

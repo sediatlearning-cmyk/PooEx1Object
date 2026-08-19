@@ -9,6 +9,5 @@ public class Test {
 		System.out.println(bill);
 		System.out.println(elon);
 	
-	
 	}
 }

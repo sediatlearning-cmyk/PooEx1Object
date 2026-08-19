@@ -44,6 +44,12 @@ public class Employee extends Person {
 		return salary;
 	}
 	
+	@Override
+	public  double getRemuneration(double CA) {
+		double remuneration = (salary -((salary * 20)/100));
+		return remuneration;	
+	}
+	
 //	@Override
 //	public String toString() {
 //		if(getCapital().getMonument()== null) {
@@ -58,15 +64,16 @@ public class Employee extends Person {
 //		+ "Entreprise : " + company + ", salaire : " + salary;
 //	}
 	
-	@Override
-	public String toString() {
-		if(getCapital().getMonument()== null) {
-			return getLastName() + ", " + getFirstName() + ", " + getAge() + " ans, habitant " + getAddress() 
-			+ ", ville de naissance : " + getHometown().getCityName() + ", " + getHometown().getCountry() + ", "
-					+ "Entreprise : " + company + ", salaire : " + salary;
-		}
-		return getLastName() + ", " + getFirstName() + ", " + getAge() + " ans, habitant " + getAddress() 
-		+ ", ville de naissance : " + getHometown().getCityName() + ", " + getHometown().getCountry() + ", Monument : " 
-		+ getCapital().getMonument() + ", " + "Entreprise : " + company + ", salaire : " + salary;
-	}	
+//	@Override
+//	public String toString() {
+//		if(getCapital().getMonument()== null) {
+//			return getLastName() + ", " + getFirstName() + ", " + getAge() + " ans, habitant " + getAddress() 
+//			+ ", ville de naissance : " + getHometown().getCityName() + ", " + getHometown().getCountry() + ", "
+//					+ "Entreprise : " + company + ", salaire : " + salary;
+//		}
+//		return getLastName() + ", " + getFirstName() + ", " + getAge() + " ans, habitant " + getAddress() 
+//		+ ", ville de naissance : " + getHometown().getCityName() + ", " + getHometown().getCountry() + ", Monument : " 
+//		+ getCapital().getMonument() + ", " + "Entreprise : " + company + ", salaire : " + salary;
+//	}
+	
 }

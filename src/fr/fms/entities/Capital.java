@@ -25,5 +25,4 @@ public class Capital extends City{
 		return getCityName() +", " + getCountry() +", " + getNumberOfInhabitants() + " habitants, Monument : " + monument;
 	}
 	
-	
 } 
