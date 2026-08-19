@@ -44,17 +44,29 @@ public class Employee extends Person {
 		return salary;
 	}
 	
+//	@Override
+//	public String toString() {
+//		if(getCapital().getMonument()== null) {
+//			return getLastName() + ", " + getFirstName() + ", " + getAge() + " ans, habitant " + getAddress() 
+//			+ ", ville de naissance : " + getHometown().getCityName() + ", " + getHometown().getCountry() + ", "
+//					+ getHometown().getNumberOfInhabitants() + " habitants, " + "Entreprise : " + company 
+//					+ ", salaire : " + salary;
+//		}
+//		return getLastName() + ", " + getFirstName() + ", " + getAge() + " ans, habitant " + getAddress() 
+//		+ ", ville de naissance : " + getHometown().getCityName() + ", " + getHometown().getCountry() + ", " 
+//		+ getHometown().getNumberOfInhabitants() + " habitants, monument : " + getCapital().getMonument() + ", " 
+//		+ "Entreprise : " + company + ", salaire : " + salary;
+//	}
+	
 	@Override
 	public String toString() {
 		if(getCapital().getMonument()== null) {
 			return getLastName() + ", " + getFirstName() + ", " + getAge() + " ans, habitant " + getAddress() 
 			+ ", ville de naissance : " + getHometown().getCityName() + ", " + getHometown().getCountry() + ", "
-					+ getHometown().getNumberOfInhabitants() + " habitants, " + "Entreprise : " + company 
-					+ ", salaire : " + salary;
+					+ "Entreprise : " + company + ", salaire : " + salary;
 		}
 		return getLastName() + ", " + getFirstName() + ", " + getAge() + " ans, habitant " + getAddress() 
-		+ ", ville de naissance : " + getHometown().getCityName() + ", " + getHometown().getCountry() + ", " 
-		+ getHometown().getNumberOfInhabitants() + " habitants, monument : " + getCapital().getMonument() + ", " 
-		+ "Entreprise : " + company + ", salaire : " + salary;
+		+ ", ville de naissance : " + getHometown().getCityName() + ", " + getHometown().getCountry() + ", Monument : " 
+		+ getCapital().getMonument() + ", " + "Entreprise : " + company + ", salaire : " + salary;
 	}	
 }

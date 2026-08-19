@@ -4,6 +4,8 @@ public class Commercial extends Person{
 	
 	private Employee employee;
 	private double ca;
+	
+	private static final double MIN_CA = 3.5;
 
 	/**
 	 * @param lastName
@@ -19,6 +21,10 @@ public class Commercial extends Person{
 		super(lastName, firstName, age, address, hometown);
 		this.employee = employee;
 		this.ca = ca;
+		if(ca < 0) {
+			this.ca = MIN_CA;
+			System.out.println("% du chiffre d'affaire inférieur à 0 impossible.");
+			}
 	}
 
 	/**
@@ -33,6 +39,19 @@ public class Commercial extends Person{
 	 */
 	public double getCa() {
 		return ca;
+	}
+
+	/**
+	 * @param ca the ca to set
+	 */
+	public void setCa(double ca) {
+		if (ca < 0) {
+			this.ca = ca;
+			throw new RuntimeException("% du chiffre d'affaire inférieur à 0 impossible.");	
+		}
+		else {
+			this.ca = ca;
+		}
 	}
 
 	@Override
